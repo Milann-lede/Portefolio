@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="fr" style="transition: 1s; scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milann Lédé - Mes projets</title>
+    <!--Personal Link-->
+    <link rel="icon" type="image/x-icon" href="assets/favico.ico" />
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/wave.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/core.css">
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!--CDN fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <!-- JavaScript de jQuery (nécessaire pour Bootstrap JavaScript Plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+</head>
+<body class="body" style="transition: 1s; scroll-behavior: smooth;">
+    <link rel="stylesheet" href="css/progress-bar.css">
+    <div id="progress-bar"></div>
+    <script>
+        // Récupération de la hauteur totale de la page
+        const body = document.body,
+          html = document.documentElement;
+        const height = Math.max(
+          body.scrollHeight,
+          body.offsetHeight,
+          html.clientHeight,
+          html.scrollHeight,
+          html.offsetHeight
+        );
+        // Fonction pour mettre à jour la largeur de la barre de progression
+        function updateProgressBar() {
+          const scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+          const progress = (scrollTop / (height*2) ) * 150;
+          document.getElementById("progress-bar").style.width = progress + "%";
+        }
+        // Appel de la fonction de mise à jour de la barre de progression au chargement de la page et à chaque événement de défilement
+        window.addEventListener("load", updateProgressBar);
+        window.addEventListener("scroll", updateProgressBar);
+      </script>
+<div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+        <h1 class="titleh1">Milann</h1>
+        <h3>Etudiant Système Numérique - Développeur Web Front-End</h3>
+        <br>
+        <ul class="ul-list">
+            <li>
+                <a class="button" href="/ÉDUQTOI/PG1.0/PG1.0.html">ÉDUQTOI</a>
+                <a class="button" href="/menu-icons-interativos-main/index.html"> menu-icons-interativos-main </a>
+                <a class="button" href="/Trombone-main/index.html">Trombone-main</a>
+            </li>
+        </ul>
+    </div>
+    <link rel="stylesheet" href="css/scare-anim.css">
+    <div class="area" >
+        <ul class="circles">
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+        </ul>
+    </div>
+    <!--Waves Container-->
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+    </div>
+    <!--Waves end-->
+
+    </div>
+    <!--Header ends-->
+
+    <!--Content starts-->
+    <div class="content flex space">
+        <h2 id="presentation" class="presentation h2p">Présentation</h2>
+        <p class="presentation-paragraph">Bonjour, je m'appelle milann alias CodeStrike sur internet, j'ai 17 ans et je suis passionné de développement web depuis bientôt 3 ans. J'ai commencé en développant des sites web pour m'amuser et m'entraîner, et j'ai rapidement découvert que j'avais un véritable talent pour le frontend, où je peux donner libre cours à ma créativité et mon amour du web design. Je suis un perfectionniste dans l'âme et je porte une grande attention à tous les détails de mes projets, pour obtenir le meilleur résultat possible. J'aime travailler de manière personnalisée et adapter chaque projet à mes clients, tout en respectant le thème initial. J'utilise des codes couleurs et des formes pour créer des designs originaux et uniques qui répondent aux besoins de mes clients.</p>
+        <div class="br"></div>
+            <h2 id="skills" class="skills h2p">Compétences</h2>
+            <link rel="stylesheet" href="css/skills.css">
+            <div class="container-skills">
+                <div class="skills-paragraph">
+                    <div class="paragraph-skills-params">
+                        <div class="size-skills"><i class="fas fa-comments"></i></div>
+                        <h3>HTML/CSS</h3>
+                        <p>Avec plus de deux ans de pratique, je suis pratiquement capable de répondre à n'importe quelle demande dans le domaine du frontend, et je suis heureux de pouvoir mettre mes compétences au service de projets passionnants et innovants !</p>
+                    </div>
+                    <div class="paragraph-skills-params">
+                        <div class="size-skills"><i class="fas fa-money-bill"></i></div>
+                        <h3>JavaScript</h3>
+                        <p>Depuis un an, J'apprends le JavaScript pour créer des animations innovantes et esthétiques qui apporteront une touche de magie à vos projets web. C'est ma passion de faire en sorte que chaque réalisation devienne une expérience unique et inspirante pour vous.</p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="skills-subtitle">Vous pouvez trouver mon <a class="a-under-skills" href="https://github.com/mimi-78" target="_blank">github</a> pour voir mes créations.</h3>
+            <style>
+                .a-under-skills{
+                    color: #565656;
+                }
+
+                .a-under-skills:hover{
+                    text-decoration: none;
+                    color: #363636;
+                }
+            </style>
+    <div class="br"></div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

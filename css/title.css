@@ -1,0 +1,29 @@
+.titleh1 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 96px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+.titleh1:before, h1:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #909090;
+    position: absolute;
+    bottom: -20px;
+}
+  
+.titleh1:before {
+    left: 50%;
+}
+  
+.titleh1:after {
+    right: 50%;
+}

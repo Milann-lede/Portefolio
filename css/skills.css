@@ -1,0 +1,39 @@
+.size-skills{
+    font-size: 76px;
+}
+
+.container-skills{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .container-skills{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-right: 30%;
+    }
+  }
+
+.skills-paragraph{
+    display: flex;
+    margin: 5%;
+    width: 75%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1280px){
+    .skills-paragraph{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50%;
+    }
+  }
+
+.paragraph-skills-params{
+    margin-right: 2%;
+    margin-left: 2%;
+}
